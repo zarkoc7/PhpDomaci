@@ -1,3 +1,32 @@
+<?php
+
+
+require "broker.php";
+require "model/user.php";
+session_start();
+
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    $uname = $_POST['username'];
+    $upass = $_POST['password'];
+    
+    $user = new User(1, $uname, $upass);
+    $odg = User::logInUser($user, $conn);
+    
+    if (!empty($odg)) {
+        $_SESSION['user_id'] = $odg['userID'];
+        $_SESSION['user_name'] = $odg['username'];
+        header('Location: home.php');
+        exit();
+    } else {
+        echo "<script>alert('Korisnik ne postoji!')</script>";
+    }
+
+   
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
