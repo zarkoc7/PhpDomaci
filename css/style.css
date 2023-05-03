@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'specify-personal-normal-black', sans-serif;
+    background: url("../img/pozadina3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    position: relative;
+  }
+
+  
+  section .form-control{
+     width:20%;
+  }
+
+
+
+  .prijava{
+    font-family: Montserrat;
+    color: white;
+    margin-bottom: 30px;
+    
+  }
+
+  
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  
+  }
+
+  input {
+    display: block;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    width: 20rem;
+    border: 2px solid #5a23c0;
+    position: relative;
+  
+  }
+
+  
+
+  .username{
+    font-family: Montserrat;
+}
+
+.password{
+    font-family: Montserrat;
+
+}
+
+form button {
+  background-color: #5a23c0;
+  color:white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+ul li {
+font-size: 2.5rem;
+list-style: none;
+}
+
+#slova {
+display: flex;
+flex-direction: row;
+}
+
+.kupujem {
+margin-top: -0.8rem;
+}
+
+.heroSection{
+  margin-top: 150px;
+  padding-left:50px;
+}
+
+nav{
+padding: 50px 0 0 50px;
+}
+
+nav .logo{
+font-family: Montserrat, sans-serif;
+font-weight: lighter;
+font-size: 70px;
+text-decoration: none;
+color: white;
+}
+
+.logo:hover{
+color:white;
+}
