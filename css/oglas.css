@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav a:link {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  
+
+  min-height: 100vh;
+}
+
+.background-wrapper{
+  position: fixed;
+ background: url("../img/pozadina3.png");
+ background-size:cover;
+  background-repeat: no-repeat;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+
+  z-index: -1;
+}
+
+select,option {
+  color:whitesmoke;
+}
+
+.delete {
+  color: rgb(255, 37, 37);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+.delete:hover{
+  cursor: pointer;
+}
+
+.inputForma{
+  border-radius: 15px;
+  border:0px;
+  padding: 5px 10px;
+}
+
+#slova {
+  display: flex;
+  flex-direction: row;
+}
+.centerClass{
+  justify-content: center;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.kupujem {
+  margin-top: -1.8rem;
+}
+
+nav{
+  font-family: 'specify-personal-normal-black', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+nav ul li {
+  font-size: 2.5rem;
+  list-style: none;
+}
+
+nav .logo{
+  font-family: Montserrat, sans-serif;
+  font-weight: lighter;
+  font-size: 70px;
+  text-decoration: none;
+  color: white;
+}
+
+
+#tabelaOglasi,.card {
+  background-color: rgba(126, 126, 126, 0.5);
+  color:whitesmoke;
+  border: none;
+  
+}
+#tabelaOglasi .izmeni{
+  margin-right: 5px;
+  color: greenyellow;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.currentlyLogged{
+  margin:10px;
+}
+
+#tabelaOglasi .obrisi{
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loggedIn{
+  font-family: Montserrat, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.selectMeni{
+  background-color: rgba(254, 186, 79,1);
+}
+
+#tabelaOglasi tr:nth-child(even) {
+
+  background-color: rgba(254, 186, 79,0.6);
+}
+
+
+#tabelaOglasi th,td{
+  
+    border-style : hidden!important;
+   
+}
+
+#tabelaOglasi th:hover{
+  cursor: pointer;
+}
+
+.dugme{
+  border: none;
+  background-color: rgba(254, 186, 79,0.6);
+}
+
+#pretraga .content{
+  /* margin: 4rem 3rem; */
+  color:whitesmoke;
+  padding: 1.5rem;
+}
+
+#pretraga label {
+  font-size: 18px;
+}
+
+ 
+
+
+
