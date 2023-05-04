@@ -1,3 +1,15 @@
+<?php 
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit();
+}
+require "broker.php";
+require "model/user.php";
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -152,7 +164,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 
-   
+    
 </body>
 
 </html>
